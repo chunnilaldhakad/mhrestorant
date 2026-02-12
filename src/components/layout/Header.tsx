@@ -46,7 +46,7 @@ const Header = () => {
           </div>
           <div className="hidden sm:block">
             <h1 className="font-serif text-lg font-semibold text-foreground leading-tight">
-              Shree Govindam
+              Shree Govindam,
             </h1>
             <p className="text-xs text-muted-foreground">Masala House</p>
           </div>

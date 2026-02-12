@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Phone, MapPin, Clock, Send, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -65,6 +65,21 @@ const Contact = () => {
                       <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                       <p className="text-muted-foreground group-hover:text-primary transition-colors">
                         9784776778
+                      </p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="mailto:shreegovindam.masalahouse@gmail.com"
+                    className="flex items-start gap-4 group"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors">
+                      <Mail className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                      <p className="text-muted-foreground group-hover:text-primary transition-colors">
+                        shreegovindam.masalahouse@gmail.com
                       </p>
                     </div>
                   </a>
@@ -168,19 +183,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Map */}
-          <div className="mt-12 card-premium overflow-hidden h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1!2d75.85!3d26.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUxJzAwLjAiTiA3NcKwNTEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Restaurant Location"
-            />
-          </div>
         </div>
       </section>
     </Layout>

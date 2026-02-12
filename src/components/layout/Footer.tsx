@@ -14,13 +14,13 @@ const Footer = () => {
                 <span className="text-secondary-foreground font-serif text-xl font-bold">S</span>
               </div>
               <div>
-                <h3 className="font-serif text-xl font-semibold">Shree Govindam</h3>
+                <h3 className="font-serif text-xl font-semibold">Shree Govindam,</h3>
                 <p className="text-sm text-primary-foreground/70">Masala House</p>
               </div>
             </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
-              Where Taste Meets Tradition. Experience authentic vegetarian Indian cuisine 
-              crafted with love and the finest ingredients.
+              Where Taste Meets Tradition. Experience authentic vegetarian Indian cuisine
+              at Shree Govindam, Masala House — crafted with love and the finest ingredients.
             </p>
             <div className="flex gap-3">
               <a
@@ -105,7 +105,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-primary-foreground/60">
-          <p>© 2024 Shree Govindam Masala House. All rights reserved.</p>
+          <p>© 2024 Shree Govindam, Masala House. All rights reserved.</p>
           <p>Pure Vegetarian • Authentic Indian Cuisine</p>
         </div>
       </div>

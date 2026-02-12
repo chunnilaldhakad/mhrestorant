@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Utensils, Truck, Building2, Users, ChefHat, Star, Quote, MapPin } from 'lucide-react';
+import { ArrowRight, Utensils, Truck, Building2, Users, ChefHat, Star, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/layout/Layout';
 import heroImage from '@/assets/hero-exterior.jpeg';
@@ -44,7 +44,7 @@ const Home = () => {
           <div className="absolute right-0 top-0 w-full lg:w-3/4 h-full">
             <img
               src={heroImage}
-              alt="Shree Govindam Masala House"
+              alt="Shree Govindam, Masala House"
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -62,7 +62,7 @@ const Home = () => {
             
             {/* Heading */}
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight mb-4 animate-fade-in">
-              Shree Govindam<br />
+              Shree Govindam,<br />
               <span className="text-primary">Masala House</span>
             </h1>
 
@@ -116,7 +116,7 @@ const Home = () => {
                 A Culinary Journey<br />of <span className="text-primary">Pure Flavors</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                At Shree Govindam Masala House, we believe in the power of authentic Indian 
+                At Shree Govindam, Masala House, we believe in the power of authentic Indian 
                 vegetarian cuisine. Every dish tells a story of tradition, crafted with the 
                 freshest ingredients and recipes passed down through generations.
               </p>
@@ -317,44 +317,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Location Preview */}
-      <section className="section-padding bg-card">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="decorative-line" />
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
-                Find Us in<br /><span className="text-primary">Jaipur</span>
-              </h2>
-              <div className="flex items-start gap-4 text-muted-foreground">
-                <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <p>
-                  Hotel Danaria, Near Jagatpura Flyover,<br />
-                  Hare Krishna Marg, Jaipur – 302017
-                </p>
-              </div>
-              <Button className="btn-primary" asChild>
-                <Link to="/contact">
-                  Get Directions
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-            </div>
-            <div className="card-premium overflow-hidden h-80">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1!2d75.85!3d26.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUxJzAwLjAiTiA3NcKwNTEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Restaurant Location"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
